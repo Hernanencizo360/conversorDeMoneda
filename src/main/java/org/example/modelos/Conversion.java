@@ -1,7 +1,6 @@
 package org.example.modelos;
 
 import com.google.gson.annotations.Expose;
-
 import java.time.LocalDateTime;
 
 public class Conversion {
@@ -24,7 +23,7 @@ public class Conversion {
         this.resultado = resultado;
         this.fechaDeConversion = LocalDateTime.now();
     }
-    // Getters y Setters (si es necesario)
+
     public String getMonedaInicial() {
         return monedaInicial;
     }

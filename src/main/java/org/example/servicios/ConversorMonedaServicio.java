@@ -4,7 +4,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.example.excepciones.HttpRequestException;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -59,7 +58,6 @@ public class ConversorMonedaServicio {
             throw new HttpRequestException("Error al realizar la solicitud HTTP.", e);
         }
     }
-
 
     private void obtenerMonedasDeseadas(String json) {
         JsonObject jsonObject = JsonParser.parseString(json).getAsJsonObject();
